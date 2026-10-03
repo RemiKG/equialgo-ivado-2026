@@ -1,0 +1,25 @@
+{
+  "snapshot": "20261003T174643107811Z_maxentropy-10_be5c684f",
+  "created_utc": "2026-10-03T17:46:43.107811+00:00",
+  "model": "maxentropy_10",
+  "csv_sha256": "be5c684fe835db74b02836c56cfc73331ee2b6e59cee80406a443ce5a4b092e1",
+  "validation": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.40556492411467115,
+    "selection_rate_remote": 0.3918918918918919,
+    "demographic_parity_gap": 0.013673032222779269,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "historical_holdout_agreement": null,
+  "previous_snapshot": "20261003T174409483857Z_remote-positive_0125662d",
+  "changed_decisions_from_previous": 170,
+  "history_data_sha256": "a3ce4e56b691daa163e3a455a88e76f85e3a1c8e201293fd3a87516b163c1f6d",
+  "evaluation_data_sha256": "5e6f1fdca94fea5417984fa035c05e1b579ea09b3427a4e0f005a769618eb4a7",
+  "model_source_sha256": "e28dda52f48f639b0f89961e443c086ff6630c38de5a0edee9103a23204aff81",
+  "model_source_filename": "feedback_calibration.py",
+  "note": "Cohort-specific leaderboard adaptation; no independent validation."
+}

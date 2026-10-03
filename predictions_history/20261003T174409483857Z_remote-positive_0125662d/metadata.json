@@ -1,0 +1,25 @@
+{
+  "snapshot": "20261003T174409483857Z_remote-positive_0125662d",
+  "created_utc": "2026-10-03T17:44:09.483857+00:00",
+  "model": "remote_positive",
+  "csv_sha256": "0125662df18ac1815dda6e2804cc5acfb25d605be7f76315ed92256bd2a7f9f7",
+  "validation": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.3697301854974705,
+    "selection_rate_remote": 0.4441031941031941,
+    "demographic_parity_gap": 0.0743730086057236,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "historical_holdout_agreement": null,
+  "previous_snapshot": "20261003T173554176733Z_commute-positive_678ed1a6",
+  "changed_decisions_from_previous": 76,
+  "history_data_sha256": "a3ce4e56b691daa163e3a455a88e76f85e3a1c8e201293fd3a87516b163c1f6d",
+  "evaluation_data_sha256": "5e6f1fdca94fea5417984fa035c05e1b579ea09b3427a4e0f005a769618eb4a7",
+  "model_source_sha256": "3c5464b2a55aa7188ec73f9d2bfcc891822d3a73b76b7b84d3a8bd23b5fff37b",
+  "model_source_filename": "experimental_models.py",
+  "note": "Controlled score hypothesis; not a policy recommendation or a scored improvement."
+}

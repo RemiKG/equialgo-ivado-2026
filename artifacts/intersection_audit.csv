@@ -1,51 +1,51 @@
-region_administrative,premiere_generation_universitaire,programme_etudes,size,sum,mean,small_cell
-Bas-Saint-Laurent,0,Arts et lettres,54,22,0.4074074074074074,False
-Bas-Saint-Laurent,0,Genie,60,23,0.38333333333333336,False
-Bas-Saint-Laurent,0,Sante,47,14,0.2978723404255319,False
-Bas-Saint-Laurent,0,Sciences,64,26,0.40625,False
-Bas-Saint-Laurent,0,Sciences sociales,49,14,0.2857142857142857,False
-Bas-Saint-Laurent,1,Arts et lettres,58,20,0.3448275862068966,False
-Bas-Saint-Laurent,1,Genie,40,19,0.475,False
-Bas-Saint-Laurent,1,Sante,34,16,0.47058823529411764,False
-Bas-Saint-Laurent,1,Sciences,43,20,0.46511627906976744,False
-Bas-Saint-Laurent,1,Sciences sociales,55,19,0.34545454545454546,False
-Capitale-Nationale,0,Arts et lettres,106,40,0.37735849056603776,False
-Capitale-Nationale,0,Genie,152,56,0.3684210526315789,False
-Capitale-Nationale,0,Sante,89,35,0.39325842696629215,False
-Capitale-Nationale,0,Sciences,144,49,0.3402777777777778,False
-Capitale-Nationale,0,Sciences sociales,104,50,0.4807692307692308,False
-Capitale-Nationale,1,Arts et lettres,38,19,0.5,False
-Capitale-Nationale,1,Genie,50,19,0.38,False
-Capitale-Nationale,1,Sante,41,17,0.4146341463414634,False
-Capitale-Nationale,1,Sciences,48,24,0.5,False
-Capitale-Nationale,1,Sciences sociales,49,17,0.3469387755102041,False
-Cote-Nord,0,Arts et lettres,68,24,0.35294117647058826,False
-Cote-Nord,0,Genie,67,23,0.34328358208955223,False
-Cote-Nord,0,Sante,58,23,0.39655172413793105,False
-Cote-Nord,0,Sciences,48,25,0.5208333333333334,False
-Cote-Nord,0,Sciences sociales,41,20,0.4878048780487805,False
-Cote-Nord,1,Arts et lettres,48,18,0.375,False
-Cote-Nord,1,Genie,37,13,0.35135135135135137,False
-Cote-Nord,1,Sante,35,14,0.4,False
-Cote-Nord,1,Sciences,38,14,0.3684210526315789,False
-Cote-Nord,1,Sciences sociales,51,21,0.4117647058823529,False
-Gaspesie-Iles-de-la-Madeleine,0,Arts et lettres,58,25,0.43103448275862066,False
-Gaspesie-Iles-de-la-Madeleine,0,Genie,88,42,0.4772727272727273,False
-Gaspesie-Iles-de-la-Madeleine,0,Sante,56,26,0.4642857142857143,False
-Gaspesie-Iles-de-la-Madeleine,0,Sciences,60,22,0.36666666666666664,False
-Gaspesie-Iles-de-la-Madeleine,0,Sciences sociales,75,30,0.4,False
-Gaspesie-Iles-de-la-Madeleine,1,Arts et lettres,52,19,0.36538461538461536,False
-Gaspesie-Iles-de-la-Madeleine,1,Genie,83,34,0.40963855421686746,False
-Gaspesie-Iles-de-la-Madeleine,1,Sante,49,20,0.40816326530612246,False
-Gaspesie-Iles-de-la-Madeleine,1,Sciences,53,21,0.39622641509433965,False
-Gaspesie-Iles-de-la-Madeleine,1,Sciences sociales,59,24,0.4067796610169492,False
-Montreal,0,Arts et lettres,172,66,0.38372093023255816,False
-Montreal,0,Genie,297,115,0.3872053872053872,False
-Montreal,0,Sante,177,78,0.4406779661016949,False
-Montreal,0,Sciences,263,112,0.42585551330798477,False
-Montreal,0,Sciences sociales,234,95,0.405982905982906,False
-Montreal,1,Arts et lettres,64,23,0.359375,False
-Montreal,1,Genie,112,39,0.3482142857142857,False
-Montreal,1,Sante,52,26,0.5,False
-Montreal,1,Sciences,77,23,0.2987012987012987,False
-Montreal,1,Sciences sociales,103,46,0.44660194174757284,False
+region_administrative,premiere_generation_universitaire,programme_etudes,size,mean,small_cell
+Bas-Saint-Laurent,0,Arts et lettres,54,0.4074074074074074,False
+Bas-Saint-Laurent,0,Genie,60,0.38333333333333336,False
+Bas-Saint-Laurent,0,Sante,47,0.2978723404255319,False
+Bas-Saint-Laurent,0,Sciences,64,0.40625,False
+Bas-Saint-Laurent,0,Sciences sociales,49,0.2857142857142857,False
+Bas-Saint-Laurent,1,Arts et lettres,58,0.3275862068965517,False
+Bas-Saint-Laurent,1,Genie,40,0.425,False
+Bas-Saint-Laurent,1,Sante,34,0.47058823529411764,False
+Bas-Saint-Laurent,1,Sciences,43,0.4418604651162791,False
+Bas-Saint-Laurent,1,Sciences sociales,55,0.3090909090909091,False
+Capitale-Nationale,0,Arts et lettres,106,0.39622641509433965,False
+Capitale-Nationale,0,Genie,152,0.3815789473684211,False
+Capitale-Nationale,0,Sante,89,0.4044943820224719,False
+Capitale-Nationale,0,Sciences,144,0.3611111111111111,False
+Capitale-Nationale,0,Sciences sociales,104,0.49038461538461536,False
+Capitale-Nationale,1,Arts et lettres,38,0.47368421052631576,False
+Capitale-Nationale,1,Genie,50,0.36,False
+Capitale-Nationale,1,Sante,41,0.4146341463414634,False
+Capitale-Nationale,1,Sciences,48,0.5,False
+Capitale-Nationale,1,Sciences sociales,49,0.3469387755102041,False
+Cote-Nord,0,Arts et lettres,68,0.35294117647058826,False
+Cote-Nord,0,Genie,67,0.34328358208955223,False
+Cote-Nord,0,Sante,58,0.39655172413793105,False
+Cote-Nord,0,Sciences,48,0.5416666666666666,False
+Cote-Nord,0,Sciences sociales,41,0.4878048780487805,False
+Cote-Nord,1,Arts et lettres,48,0.375,False
+Cote-Nord,1,Genie,37,0.35135135135135137,False
+Cote-Nord,1,Sante,35,0.37142857142857144,False
+Cote-Nord,1,Sciences,38,0.3684210526315789,False
+Cote-Nord,1,Sciences sociales,51,0.39215686274509803,False
+Gaspesie-Iles-de-la-Madeleine,0,Arts et lettres,58,0.43103448275862066,False
+Gaspesie-Iles-de-la-Madeleine,0,Genie,88,0.4659090909090909,False
+Gaspesie-Iles-de-la-Madeleine,0,Sante,56,0.4642857142857143,False
+Gaspesie-Iles-de-la-Madeleine,0,Sciences,60,0.36666666666666664,False
+Gaspesie-Iles-de-la-Madeleine,0,Sciences sociales,75,0.4,False
+Gaspesie-Iles-de-la-Madeleine,1,Arts et lettres,52,0.36538461538461536,False
+Gaspesie-Iles-de-la-Madeleine,1,Genie,83,0.40963855421686746,False
+Gaspesie-Iles-de-la-Madeleine,1,Sante,49,0.40816326530612246,False
+Gaspesie-Iles-de-la-Madeleine,1,Sciences,53,0.39622641509433965,False
+Gaspesie-Iles-de-la-Madeleine,1,Sciences sociales,59,0.4067796610169492,False
+Montreal,0,Arts et lettres,172,0.38953488372093026,False
+Montreal,0,Genie,297,0.39057239057239057,False
+Montreal,0,Sante,177,0.4463276836158192,False
+Montreal,0,Sciences,263,0.43346007604562736,False
+Montreal,0,Sciences sociales,234,0.405982905982906,False
+Montreal,1,Arts et lettres,64,0.359375,False
+Montreal,1,Genie,112,0.33035714285714285,False
+Montreal,1,Sante,52,0.5,False
+Montreal,1,Sciences,77,0.2857142857142857,False
+Montreal,1,Sciences sociales,103,0.4368932038834951,False

@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "team": "SOTA Overfitters",
+  "primary": "structured_merit",
+  "v1_user_reported_accuracy": 0.9463,
+  "v1_user_reported_macro_f1": 0.944,
+  "v2_official_accuracy": null,
+  "v2_official_macro_f1": null,
+  "submission": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.40893760539629004,
+    "selection_rate_remote": 0.386977886977887,
+    "demographic_parity_gap": 0.02195971841840305,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "changed_from_v1": 194,
+  "scenario_count": 2048,
+  "candidates": {
+    "structured_merit": {
+      "rows": 4000,
+      "grants": 1600,
+      "grant_rate": 0.4,
+      "selection_rate_centre": 0.40893760539629004,
+      "selection_rate_remote": 0.386977886977887,
+      "demographic_parity_gap": 0.02195971841840305,
+      "reference_accuracy": null,
+      "reference_equal_opportunity_gap": null,
+      "status": "Format, IDs and budget valid; hidden-reference metrics unavailable.",
+      "changed_from_v1": 194,
+      "method": "structured_merit",
+      "official_accuracy": null,
+      "v1_user_reported_accuracy": 0.9463
+    },
+    "broad_merit": {
+      "rows": 4000,
+      "grants": 1600,
+      "grant_rate": 0.4,
+      "selection_rate_centre": 0.40345699831365933,
+      "selection_rate_remote": 0.39496314496314494,
+      "demographic_parity_gap": 0.008493853350514391,
+      "reference_accuracy": null,
+      "reference_equal_opportunity_gap": null,
+      "status": "Format, IDs and budget valid; hidden-reference metrics unavailable.",
+      "changed_from_v1": 152,
+      "method": "broad_merit",
+      "official_accuracy": null,
+      "v1_user_reported_accuracy": 0.9463
+    },
+    "academic_anchor": {
+      "rows": 4000,
+      "grants": 1600,
+      "grant_rate": 0.4,
+      "selection_rate_centre": 0.422849915682968,
+      "selection_rate_remote": 0.3667076167076167,
+      "demographic_parity_gap": 0.05614229897535128,
+      "reference_accuracy": null,
+      "reference_equal_opportunity_gap": null,
+      "status": "Format, IDs and budget valid; hidden-reference metrics unavailable.",
+      "changed_from_v1": 170,
+      "official_accuracy": null
+    }
+  },
+  "historical_cv": {
+    "log": {
+      "historical_log_loss": 0.2589889358005123,
+      "historical_agreement": 0.8872
+    },
+    "raw": {
+      "historical_log_loss": 0.26092106004195836,
+      "historical_agreement": 0.8864000000000001
+    }
+  },
+  "selected_model_implied_metrics": {
+    "model_implied_agreement": 0.9741250118389406,
+    "model_implied_eop_gap": 0.013228158888601182,
+    "measured_dp_gap": 0.02195971841840305
+  },
+  "decision_changes": [
+    {
+      "group": "new_grantees",
+      "count": 97,
+      "mean_r": 28.72319587628866,
+      "mean_work_hours": 7.22680412371134,
+      "mean_income": 58273.0206185567,
+      "first_generation_rate": 0.5773195876288659,
+      "remote_rate": 0.31958762886597936
+    },
+    {
+      "group": "no_longer_selected",
+      "count": 97,
+      "mean_r": 28.155773195876286,
+      "mean_work_hours": 15.31958762886598,
+      "mean_income": 79264.70103092784,
+      "first_generation_rate": 0.28865979381443296,
+      "remote_rate": 0.5360824742268041
+    }
+  ],
+  "caveat": "Uses reported aggregate evaluation feedback. Model-implied improvement is not validated. Low-noise assumption is experimental."
+}

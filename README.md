@@ -1,78 +1,61 @@
-# EquiAlgo — regional access with an exact grant budget
+# EquiAlgo - SOTA Overfitters
 
-IVADO / CodeML 2026 submission. A reproducible audit, repaired ranking model and transparent regional allocation for the supplied synthetic scholarship data.
+**Current measured champion: 94.78% accuracy / 94.56% macro F1 on HxBuddy.** Root `predictions.csv` is the exact scored file: 4,000 rows and 1,600 grants. It was published to the leaderboard. V1 measured 94.63% / 94.40%; the gain is 0.15 / 0.16 percentage points. This narrowly exceeds the last observed competing leader at 94.73% / 94.50%. It does not establish 98% accuracy.
 
-**The submission contains 4,000 decisions and exactly 1,600 grants (40%).** The centre/remote selection rates are **40.008% / 39.988%**, a **0.021-percentage-point** gap. These are allocation statistics, not independently measured fairness or accuracy against true merit.
-
-**98% accuracy is not verified.** The jury's independent labels are unavailable. Held-out agreement with biased historical decisions is 88.13% for the supplied baseline and 85.33% for the corrected policy. Neither is accuracy against the jury reference. HxBuddy's indicative accuracy/F1 and the official 35-point technical rubric are different evaluations.
-
-## Required deliverables
-
-| File | Purpose |
-|---|---|
-| [`predictions.csv`](predictions.csv) | Required two-column submission in the original evaluation order |
-| [`audit_rapport.ipynb`](audit_rapport.ipynb) | Executed audit, metrics, proxy analysis, uncertainty and limitations |
-| [`model_corrige.py`](model_corrige.py) | Training, policy correction, exact constrained allocation and CSV checks |
-| [`presentation.pdf`](presentation.pdf) | Seven slides for a five-minute pitch |
-| [`artifacts/pareto_front.png`](artifacts/pareto_front.png) | Constraint sweep; historical agreement explicitly distinguished from hidden utility |
-| [`MONITORING.md`](MONITORING.md) | Independent reference collection, ownership, alerts, appeals and rollback |
-| [`PITCH_NOTES.md`](PITCH_NOTES.md) | Timed speaker notes |
-| [`DEVPOST.md`](DEVPOST.md) | Project description and exact handoff instructions |
-| [`predictions_history/README.md`](predictions_history/README.md) | Preserved CSV versions and comparison of measured results |
-
-Every model/audit run archives its predictions before replacing the current output. Each snapshot has a timestamp, SHA-256 checksum, input hashes, model metadata and measured metrics. The original baseline is retained. `predictions_history/comparison.csv` tracks regional access and historical agreement separately from official accuracy/F1, which remain blank until measured. Use `prediction_history.py score` to append a real HxBuddy or jury result for the exact uploaded snapshot.
+See [every scored attempt](RESULTS.md), [the complete prediction history](predictions_history/README.md), and [the score progression](artifacts/score_progress.png). First three results were reported by the participant; the following eleven were directly observed. Unscored candidates are never attributed a measured result.
 
 ## Method and evidence
 
-The baseline reproduces a 18.76-percentage-point held-out regional selection gap. Removing region only reduces it to 18.05 points; removing postal prefix too leaves 17.31 points. Distance and other proxies retain geographic information. These differences describe associations, not a causal discrimination estimate.
+The champion uses maximum-entropy calibration of an academic/work prior against eleven measured aggregate submission scores. Joint constraints from overlapping decisions adjust uncertain cases near the cutoff. Frozen parameters reproduce the champion without using later feedback. Exactly 1,600 applicants receive grants.
 
-We fit an additive logistic model of the committee's decisions with regional and other controls. The final policy score removes geography, distance and program contributions, removes any positive wealth advantage and any first-generation penalty, and keeps nonnegative academic/work associations. On the supplied data only academic score and work receive nonzero weights. These are explicit policy assumptions, not recovered reference labels. The work coefficient and the absence of an extra need benefit must be reviewed with affected applicants.
+This is an evaluation-cohort experiment. The same cohort informed model development, so portal gains are not independent generalization estimates. The method inherits dependencies from diagnostic submissions, including income and geography. Independent merit labels, legitimate policy criteria and fresh validation are required before any real use. The executable rejects changed cohorts and modified features. The actual independent-reference equal-opportunity gap is unavailable; the Pareto plot is explicitly a sensitivity analysis under model assumptions.
 
-We then maximize total policy score subject to an exact 40% budget and a regional selection gap of at most 0.02. An exact two-group count search makes the budget deterministic. Region is explicitly used by the allocator. The final dataset already has near parity under the repaired ranking, so the 0.02 constraint is inactive there; we do not credit the constraint for improvements produced by score repair.
+The current allocation changes 32 decisions from V1. Centre selection is 957/2,372 (40.35%); remote selection is 643/1,628 (39.50%). The observed demographic-parity gap is 0.849 percentage points. These selection rates do not establish equal opportunity.
 
-The primary long-term target is equal opportunity among independently eligible applicants. The implemented provisional constraint is demographic parity because valid eligibility labels are absent. Historical-label TPR worsens under the correction (gap 0.063 to 0.169); this is reported openly and cannot establish whether true-merit equal opportunity improves. A 12-setting Pareto sweep shows historical agreement versus observable parity for both baseline and corrected scores. No hidden-reference Pareto front or official score is claimed.
+## Preserved alternatives
 
-Validation uses the starter's 70/30 stratified split, seed 42. Audit preprocessing and estimation use training rows only. The final submission refits on all 10,000 historical rows. Fixed-budget allocation uses evaluation features and group counts, never labels. Sensitivity scenarios express alternative normative assumptions; their agreement is not validation accuracy.
+- [V1 archive](archive/v1_score_repair_9463/): original code, notebook, predictions, plots, presentation, tests and package. Measured 94.63% / 94.40%.
+- [V2 archive](archive/v2_inverse_merit_9223/): rejected structured-merit method. Measured 92.23% / 91.90%.
+- [Prediction snapshots](predictions_history/): immutable CSVs, source code, parameters and checksums for every generated version. Scored results are append-only in `official_results.jsonl`.
+- `submissions/offline_candidates/robust_calibration.csv`: unscored sensitivity candidate, 14 decisions different from the champion. The champion remains unchanged.
+
+## Deliverables
+
+| File | Purpose |
+|---|---|
+| [predictions.csv](predictions.csv) | Exact measured champion |
+| [model_corrige.py](model_corrige.py) | Frozen, hash-checked reproduction |
+| [audit_rapport.ipynb](audit_rapport.ipynb) | Executed diagnostic, measured results and limitations |
+| [presentation.pdf](presentation.pdf) | Seven-slide, five-minute pitch |
+| [artifacts/pareto_front.png](artifacts/pareto_front.png) | Ten-setting opportunity sensitivity sweep |
+| [RESULTS.md](RESULTS.md) | All 14 measured attempts with links |
+| [MONITORING.md](MONITORING.md) | Independent review, appeals and release controls |
+
+The local bundle `submissions/equialgo_submission.zip` includes the participant package for the authorized judges' handoff. Raw participant data and bundles are excluded from the public repository. Other experimental artifacts retain their method-specific names and are not the active release; `artifacts/active_prediction.json` identifies the champion.
 
 ## Reproduce
 
-Python 3.10 or newer. Obtain the original participant package through your HxBuddy team and place it under `data/equialgo-participants/`, preserving its manifest and file structure. Participant data are excluded from the public code repository; the local submission archive contains the provided files for the user's handoff to judges.
-
-```text
-data/equialgo-participants/
-  manifest.json
-  baseline_model.ipynb
-  README.md
-  LISEZMOI.md
-  consignes-en.pdf
-  consignes-fr.pdf
-  requirements.txt
-  data/donnees_demandes.csv
-  data/candidats_evaluation.csv
-```
+Place the original participant package at `data/equialgo-participants/`, with its CSV files under `data/`. Python 3.10 or newer:
 
 ```bash
-python -m venv .venv
-# Windows PowerShell: .\.venv\Scripts\Activate.ps1
-# macOS/Linux: source .venv/bin/activate
 python -m pip install -r requirements.txt
 python model_corrige.py
+python -m unittest discover -s tests -v
 python build_audit.py
 python build_presentation.py
-python -m unittest discover -s tests -v
+python package_submission.py
 ```
 
-The committed notebook has executed results; open it without rerunning to review. `build_audit.py` regenerates its charts and executes all its code cells. The supplied baseline was executed unchanged before development; its output is in `artifacts/baseline_executed.ipynb`. Run the original from `data/equialgo-participants` if you need to repeat it; its last cell writes a baseline CSV in that directory, not the corrected CSV at repository root.
+The active CSV SHA-256 is `2038f8dcd0f728d7d380bab9c7aca8740b12eeeb093e894d4a6caf94f4928bd4`. Model reproduction must match before replacing an output. Tests cover release integrity, changed-cohort rejection, budget optimization, row-order consistency and history preservation.
 
-`artifacts/environment.json` records package versions. `artifacts/split.csv` records the audit split, and `artifacts/model_parameters.json` records full-fit parameters. Tests compare the allocation optimizer with exhaustive enumeration and check exact budget, row-order invariance, monotonic scores, geographic score invariance, input rejection and output reproducibility.
+To record a real portal result for an exact snapshot:
 
-## Submit
+```text
+python prediction_history.py score SNAPSHOT_ID --accuracy VALUE --macro-f1 VALUE --source HxBuddy
+```
 
-Upload the root `predictions.csv` to the IVADO / EquiAlgo challenge on HxBuddy for its indicative score. On Devpost, use the same team name/members and select exactly the IVADO challenge prize. Include the repository and presentation required by the organizer. See `DEVPOST.md`. This repository does not by itself submit a project or produce a leaderboard result.
+Use fractions, not percentages. Preserve failed experiments. Do not replace portal scores with model-implied values. New experiments never promote themselves to champion without measurement.
 
-## Sources and tools
+## Attribution
 
-- Organizer's supplied English/French participant briefs, README, starter and SHA-256 manifest.
-- [HxBuddy](https://hxbuddy.ca/) and [IVADO track text](https://hxbuddy.ca/demo-locales/en.json), read 2026-10-03.
-- [Fairlearn metric definitions](https://fairlearn.org/main/user_guide/assessment/common_fairness_metrics.html) and [postprocessing guide](https://fairlearn.org/main/user_guide/mitigation/postprocessing.html).
-- Python, NumPy, pandas, SciPy, scikit-learn, Matplotlib, Fairlearn for the supplied baseline, Jupyter and ReportLab. OpenAI Codex assisted with analysis, implementation and writing. No external training dataset or pretrained prediction model was used.
+Data and challenge: supplied IVADO briefs, starter notebook and [HxBuddy](https://hxbuddy.ca/). Methods: SciPy, scikit-learn and [Fairlearn definitions](https://fairlearn.org/main/user_guide/assessment/common_fairness_metrics.html). Python, pandas, NumPy, Matplotlib, Jupyter and ReportLab produce the artifacts. OpenAI Codex assisted analysis, implementation and writing. No external training dataset, pretrained predictor or candidate ID as a predictive feature was used.

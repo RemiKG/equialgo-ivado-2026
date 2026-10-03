@@ -1,0 +1,45 @@
+{
+  "structured_merit": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.40893760539629004,
+    "selection_rate_remote": 0.386977886977887,
+    "demographic_parity_gap": 0.02195971841840305,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable.",
+    "changed_from_v1": 194,
+    "method": "structured_merit",
+    "official_accuracy": null,
+    "v1_user_reported_accuracy": 0.9463
+  },
+  "broad_merit": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.40345699831365933,
+    "selection_rate_remote": 0.39496314496314494,
+    "demographic_parity_gap": 0.008493853350514391,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable.",
+    "changed_from_v1": 152,
+    "method": "broad_merit",
+    "official_accuracy": null,
+    "v1_user_reported_accuracy": 0.9463
+  },
+  "academic_anchor": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.422849915682968,
+    "selection_rate_remote": 0.3667076167076167,
+    "demographic_parity_gap": 0.05614229897535128,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable.",
+    "changed_from_v1": 170,
+    "official_accuracy": null
+  }
+}

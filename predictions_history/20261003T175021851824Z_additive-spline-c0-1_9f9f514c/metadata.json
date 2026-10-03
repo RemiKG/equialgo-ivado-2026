@@ -1,0 +1,25 @@
+{
+  "snapshot": "20261003T175021851824Z_additive-spline-c0-1_9f9f514c",
+  "created_utc": "2026-10-03T17:50:21.851824+00:00",
+  "model": "additive_spline_C0.1",
+  "csv_sha256": "9f9f514caa384c0d81189ff08f5b016c035e8b68fb85f6b1cc71a1e6f998fb3c",
+  "validation": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.3996627318718381,
+    "selection_rate_remote": 0.4004914004914005,
+    "demographic_parity_gap": 0.0008286686195623783,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "historical_holdout_agreement": null,
+  "previous_snapshot": "20261003T174849668846Z_maxentropy-11_2038f8dc",
+  "changed_decisions_from_previous": 44,
+  "history_data_sha256": "a3ce4e56b691daa163e3a455a88e76f85e3a1c8e201293fd3a87516b163c1f6d",
+  "evaluation_data_sha256": "5e6f1fdca94fea5417984fa035c05e1b579ea09b3427a4e0f005a769618eb4a7",
+  "model_source_sha256": "e403e9f52b9bd0c6a62726392fe8e93a6f61c7e20f7baa159e08826baf560f4d",
+  "model_source_filename": "nonlinear_merit.py",
+  "note": "Nonlinear academic/work committee signal with bias terms removed; unverified merit hypothesis."
+}

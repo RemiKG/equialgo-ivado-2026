@@ -1,0 +1,7 @@
+{
+  "accuracy": 0.9223,
+  "macro_f1": 0.919,
+  "source": "User-reported HxBuddy result",
+  "recorded_utc": "2026-10-03T17:19:46.548635+00:00",
+  "status": "Rejected: worse than V1 .9463 accuracy"
+}

@@ -2,9 +2,9 @@
   "rows": 4000,
   "grants": 1600,
   "grant_rate": 0.4,
-  "selection_rate_centre": 0.40008431703204045,
-  "selection_rate_remote": 0.3998771498771499,
-  "demographic_parity_gap": 0.00020716715489055293,
+  "selection_rate_centre": 0.40345699831365933,
+  "selection_rate_remote": 0.39496314496314494,
+  "demographic_parity_gap": 0.008493853350514391,
   "reference_accuracy": null,
   "reference_equal_opportunity_gap": null,
   "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."

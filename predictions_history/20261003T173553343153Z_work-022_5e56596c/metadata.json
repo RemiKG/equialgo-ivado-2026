@@ -1,0 +1,25 @@
+{
+  "snapshot": "20261003T173553343153Z_work-022_5e56596c",
+  "created_utc": "2026-10-03T17:35:53.343153+00:00",
+  "model": "work_022",
+  "csv_sha256": "5e56596ca84879cdda199318e7cdfcc6452ecddbd802c1232f620e7b912c344c",
+  "validation": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.38069139966273186,
+    "selection_rate_remote": 0.42813267813267813,
+    "demographic_parity_gap": 0.04744127846994628,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "historical_holdout_agreement": null,
+  "previous_snapshot": "20261003T172906132935Z_v3-feedback-conditioned_96ac7e4b",
+  "changed_decisions_from_previous": 102,
+  "history_data_sha256": "a3ce4e56b691daa163e3a455a88e76f85e3a1c8e201293fd3a87516b163c1f6d",
+  "evaluation_data_sha256": "5e6f1fdca94fea5417984fa035c05e1b579ea09b3427a4e0f005a769618eb4a7",
+  "model_source_sha256": "3c5464b2a55aa7188ec73f9d2bfcc891822d3a73b76b7b84d3a8bd23b5fff37b",
+  "model_source_filename": "experimental_models.py",
+  "note": "Controlled score hypothesis; not a policy recommendation or a scored improvement."
+}

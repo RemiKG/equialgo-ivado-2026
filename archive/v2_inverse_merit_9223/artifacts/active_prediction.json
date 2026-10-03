@@ -1,0 +1,7 @@
+{
+  "snapshot": "20261003T170400518781Z_v2-structured-merit_e83a4b59",
+  "csv_sha256_normalized": "e83a4b594feced41f11bd8c90adfbfdd7ac6f028b8243c4b65291dc7951362a8",
+  "method": "structured_merit",
+  "official_score_status": "pending",
+  "v1_accuracy_reported": 0.9463
+}

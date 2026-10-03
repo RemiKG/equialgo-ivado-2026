@@ -1,0 +1,52 @@
+{
+  "method": "broad_merit",
+  "scenario_count": 2048,
+  "seed": 20261003,
+  "committee": {
+    "income_link": "log",
+    "features": [
+      "intercept",
+      "academic_per_3",
+      "work_per_4",
+      "income",
+      "distance_per_200",
+      "first_generation",
+      "remote"
+    ],
+    "coefficients": [
+      0.06228127484503256,
+      4.155757785984278,
+      0.8078416205253395,
+      1.7783375770191883,
+      0.21594574138106842,
+      -0.051317394051664744,
+      -2.1558946762867217
+    ],
+    "standard_errors": [
+      0.050861562726938855,
+      0.09068799978893533,
+      0.046377587478377676,
+      0.09108542068075398,
+      0.10193917781825636,
+      0.07665755549328587,
+      0.14395752591403188
+    ],
+    "work_per_r_point": 0.14579319743739674
+  },
+  "effective_scenarios": 419.7281157042912,
+  "weighted_mean_coefficients": [
+    0.9999999999999996,
+    0.07318006717022732,
+    -0.38559724420397207,
+    0.29315757279330323,
+    0.07394112915927992
+  ],
+  "weighted_noise_r_units": 0.34976030788666457,
+  "feedback": {
+    "accuracy": 0.9463,
+    "macro_f1": 0.944,
+    "source": "User-reported HxBuddy V1 result; rounded display"
+  },
+  "accuracy_for_this_model": null,
+  "warning": "Aggregate evaluation feedback used. Model-implied results are not validation."
+}

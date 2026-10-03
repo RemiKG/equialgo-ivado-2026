@@ -7,3 +7,4 @@ __pycache__/
 # Participant data were supplied through team access; do not republish them.
 data/
 all you need
+archive/**/*.zip
