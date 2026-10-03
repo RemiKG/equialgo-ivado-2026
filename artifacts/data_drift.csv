@@ -1,0 +1,6 @@
+feature,history_mean,evaluation_mean,standardized_mean_shift
+cote_r_equivalent,27.722834000000002,27.798895,0.025320484183107034
+revenu_familial_estime,68165.9014,68754.102,0.018330351335940503
+heures_travail_semaine,10.591,10.60625,0.004006840784950921
+distance_domicile_campus_km,100.45707,101.825275,0.01129887210978728
+premiere_generation_universitaire,0.3365,0.34225,0.01216839029371198

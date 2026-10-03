@@ -1,0 +1,14 @@
+feature,historical_coefficient_standardized,policy_coefficient_standardized,policy_coefficient_raw
+cote_r_equivalent,4.121938841687033,4.121938841687033,1.3835547462455533
+revenu_familial_estime,0.7409132192850253,0.0,0.0
+heures_travail_semaine,0.7466237504466494,0.7466237504466494,0.1969028737322957
+distance_domicile_campus_km,0.11286334937987913,0.0,0.0
+premiere_generation_universitaire,-0.09504552312435224,0.0,0.0
+programme_etudes_Genie,0.04267935501740095,0.0,0.0
+programme_etudes_Sante,0.0649819406692421,0.0,0.0
+programme_etudes_Sciences,0.0388149944698282,0.0,0.0
+programme_etudes_Sciences sociales,0.011114882174241175,0.0,0.0
+region_administrative_Capitale-Nationale,0.8048029665094419,0.0,0.0
+region_administrative_Cote-Nord,-0.04432665348219018,0.0,0.0
+region_administrative_Gaspesie-Iles-de-la-Madeleine,-0.045517713884267154,0.0,0.0
+region_administrative_Montreal,1.021438386067506,0.0,0.0

@@ -1,0 +1,9 @@
+feature,remote_prediction_auc,remote_prediction_accuracy
+code_postal_3,1.0,1.0
+all_without_region,0.9998919229663695,0.9936666666666667
+distance_domicile_campus_km,0.9973367059499855,0.9873333333333333
+heures_travail_semaine,0.8063197470537511,0.746
+revenu_familial_estime,0.6977280827824087,0.664
+premiere_generation_universitaire,0.5873411899971256,0.616
+cote_r_equivalent,0.552320551882725,0.5883333333333334
+programme_etudes,0.5476224202356998,0.5916666666666667

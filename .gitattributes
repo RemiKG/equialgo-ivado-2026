@@ -1,0 +1,2 @@
+# Keep snapshot and manifest hashes identical across Windows and Linux checkouts.
+* -text

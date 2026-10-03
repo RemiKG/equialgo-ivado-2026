@@ -1,0 +1,193 @@
+{
+  "historical_rows": 10000,
+  "evaluation_rows": 4000,
+  "holdout_rows": 3000,
+  "seed": 42,
+  "max_gap_policy": 0.02,
+  "historical_selection_centre": 0.4836666666666667,
+  "historical_selection_remote": 0.273,
+  "academic_band_standardized_historical_gap": 0.13923116733738822,
+  "holdout_metrics": {
+    "baseline": {
+      "historical_agreement": 0.8813333333333333,
+      "historical_macro_f1": 0.8753743437315629,
+      "selection_rate": 0.382,
+      "centre_selection": 0.45859154929577467,
+      "remote_selection": 0.2710204081632653,
+      "demographic_parity_gap": 0.1875711411325094,
+      "historical_tpr_centre": 0.8474970896391153,
+      "historical_tpr_remote": 0.7846607669616519,
+      "historical_tpr_gap": 0.06283632267746342,
+      "historical_fpr_centre": 0.09388646288209607,
+      "historical_fpr_remote": 0.0744920993227991,
+      "ci_95": {
+        "historical_agreement": [
+          0.8691583333333334,
+          0.8925083333333333
+        ],
+        "demographic_parity_gap": [
+          0.1658718022420236,
+          0.2104371945961483
+        ],
+        "historical_tpr_gap": [
+          0.01219175071514176,
+          0.11079031322007825
+        ]
+      }
+    },
+    "drop_region": {
+      "historical_agreement": 0.8836666666666667,
+      "historical_macro_f1": 0.8779549445091324,
+      "selection_rate": 0.38433333333333336,
+      "centre_selection": 0.4580281690140845,
+      "remote_selection": 0.27755102040816326,
+      "demographic_parity_gap": 0.18047714860592123,
+      "historical_tpr_centre": 0.8474970896391153,
+      "historical_tpr_remote": 0.8053097345132744,
+      "historical_tpr_gap": 0.04218735512584093,
+      "historical_fpr_centre": 0.0927947598253275,
+      "historical_fpr_remote": 0.07562076749435666
+    },
+    "drop_region_postal": {
+      "historical_agreement": 0.8793333333333333,
+      "historical_macro_f1": 0.8739857945091225,
+      "selection_rate": 0.39466666666666667,
+      "centre_selection": 0.46535211267605636,
+      "remote_selection": 0.2922448979591837,
+      "demographic_parity_gap": 0.17310721471687268,
+      "historical_tpr_centre": 0.8498253783469151,
+      "historical_tpr_remote": 0.8259587020648967,
+      "historical_tpr_gap": 0.02386667628201833,
+      "historical_fpr_centre": 0.10480349344978165,
+      "historical_fpr_remote": 0.08803611738148984
+    },
+    "corrected": {
+      "historical_agreement": 0.8533333333333334,
+      "historical_macro_f1": 0.8471797013891365,
+      "selection_rate": 0.4,
+      "centre_selection": 0.4,
+      "remote_selection": 0.4,
+      "demographic_parity_gap": 0.0,
+      "historical_tpr_centre": 0.7694994179278231,
+      "historical_tpr_remote": 0.9380530973451328,
+      "historical_tpr_gap": 0.1685536794173097,
+      "historical_fpr_centre": 0.05349344978165939,
+      "historical_fpr_remote": 0.19413092550790068,
+      "ci_95": {
+        "historical_agreement": [
+          0.840475,
+          0.8665083333333333
+        ],
+        "demographic_parity_gap": [
+          0.0,
+          0.02617361310721469
+        ],
+        "historical_tpr_gap": [
+          0.12923204247238165,
+          0.20704942634125567
+        ]
+      }
+    },
+    "controlled_logistic": {
+      "historical_agreement": 0.885,
+      "historical_macro_f1": 0.8800910751729325,
+      "selection_rate": 0.3983333333333333,
+      "centre_selection": 0.49295774647887325,
+      "remote_selection": 0.2612244897959184,
+      "demographic_parity_gap": 0.23173325668295486,
+      "historical_tpr_centre": 0.8882421420256111,
+      "historical_tpr_remote": 0.7699115044247787,
+      "historical_tpr_gap": 0.1183306376008324,
+      "historical_fpr_centre": 0.1222707423580786,
+      "historical_fpr_remote": 0.06659142212189616
+    }
+  },
+  "submission": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.40008431703204045,
+    "selection_rate_remote": 0.3998771498771499,
+    "demographic_parity_gap": 0.00020716715489055293,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "assumption_sensitivity": [
+    {
+      "assumed_policy": "academic_only",
+      "decision_overlap": 0.944,
+      "tpr_gap_under_assumption": 0.0804437765533107,
+      "changed_decisions": 224
+    },
+    {
+      "assumed_policy": "learned_work_credit",
+      "decision_overlap": 1.0,
+      "tpr_gap_under_assumption": 0.0,
+      "changed_decisions": 0
+    },
+    {
+      "assumed_policy": "add_mild_financial_need",
+      "decision_overlap": 0.9625,
+      "tpr_gap_under_assumption": 0.03343511669934274,
+      "changed_decisions": 150
+    },
+    {
+      "assumed_policy": "add_stronger_financial_need",
+      "decision_overlap": 0.9195,
+      "tpr_gap_under_assumption": 0.06587649638497095,
+      "changed_decisions": 322
+    },
+    {
+      "assumed_policy": "add_first_generation_support",
+      "decision_overlap": 0.965,
+      "tpr_gap_under_assumption": 0.010286028868488617,
+      "changed_decisions": 140
+    }
+  ],
+  "fit_stability": [
+    {
+      "bootstrap_seed": 7,
+      "decision_overlap": 0.9965,
+      "changed_decisions": 14,
+      "grant_rate": 0.4
+    },
+    {
+      "bootstrap_seed": 42,
+      "decision_overlap": 0.9995,
+      "changed_decisions": 2,
+      "grant_rate": 0.4
+    },
+    {
+      "bootstrap_seed": 123,
+      "decision_overlap": 0.997,
+      "changed_decisions": 12,
+      "grant_rate": 0.4
+    },
+    {
+      "bootstrap_seed": 2026,
+      "decision_overlap": 0.9985,
+      "changed_decisions": 6,
+      "grant_rate": 0.4
+    },
+    {
+      "bootstrap_seed": 8675309,
+      "decision_overlap": 1.0,
+      "changed_decisions": 0,
+      "grant_rate": 0.4
+    }
+  ],
+  "original_files_intact": {
+    "LISEZMOI.md": true,
+    "README.md": true,
+    "baseline_model.ipynb": true,
+    "consignes-en.pdf": true,
+    "consignes-fr.pdf": true,
+    "data/candidats_evaluation.csv": true,
+    "data/donnees_demandes.csv": true,
+    "requirements.txt": true
+  },
+  "hidden_reference_accuracy": null,
+  "hidden_reference_eop_gap": null,
+  "interpretation": "Historical agreement and assumed-policy agreement are not true-merit accuracy."
+}

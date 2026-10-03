@@ -1,0 +1,25 @@
+{
+  "snapshot": "20261003T163644542154Z_corrected-policy-audited_0120f838",
+  "created_utc": "2026-10-03T16:36:44.542154+00:00",
+  "model": "corrected-policy-audited",
+  "csv_sha256": "0120f838852cf652c01bcee39ee0ef453d2591a4b5394d033a506b4d48de18c6",
+  "validation": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.40008431703204045,
+    "selection_rate_remote": 0.3998771498771499,
+    "demographic_parity_gap": 0.00020716715489055293,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "historical_holdout_agreement": 0.8533333333333334,
+  "previous_snapshot": "20261003T163633785813Z_corrected-initial_0120f838",
+  "changed_decisions_from_previous": 0,
+  "history_data_sha256": "a3ce4e56b691daa163e3a455a88e76f85e3a1c8e201293fd3a87516b163c1f6d",
+  "evaluation_data_sha256": "5e6f1fdca94fea5417984fa035c05e1b579ea09b3427a4e0f005a769618eb4a7",
+  "model_source_sha256": "00cd6f109cf5d01135056e30ec17df9ba339e631b1e741c38e49fedfd4c8ae98",
+  "note": "Full-fit evaluation predictions; historical agreement uses the separate 3,000-row holdout model.",
+  "model_source_filename": "model_corrige.py"
+}

@@ -1,0 +1,9 @@
+work/
+submissions/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+# Participant data were supplied through team access; do not republish them.
+data/
+all you need

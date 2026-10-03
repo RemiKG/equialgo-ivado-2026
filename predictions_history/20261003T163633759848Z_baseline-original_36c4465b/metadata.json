@@ -1,0 +1,25 @@
+{
+  "snapshot": "20261003T163633759848Z_baseline-original_36c4465b",
+  "created_utc": "2026-10-03T16:36:33.759848+00:00",
+  "model": "baseline-original",
+  "csv_sha256": "36c4465b7f4cd27ed4e0dbbf4f0e707b9e105d7e3196923029b216b99ba58ac1",
+  "validation": {
+    "rows": 4000,
+    "grants": 1562,
+    "grant_rate": 0.3905,
+    "selection_rate_centre": 0.4679595278246206,
+    "selection_rate_remote": 0.27764127764127766,
+    "demographic_parity_gap": 0.19031825018334292,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "historical_holdout_agreement": 0.8813333333333333,
+  "previous_snapshot": null,
+  "changed_decisions_from_previous": null,
+  "history_data_sha256": "a3ce4e56b691daa163e3a455a88e76f85e3a1c8e201293fd3a87516b163c1f6d",
+  "evaluation_data_sha256": "5e6f1fdca94fea5417984fa035c05e1b579ea09b3427a4e0f005a769618eb4a7",
+  "model_source_sha256": "fadbbc55cf2bd25a7f0559215c97f4aacd8b22a65e4018de5daa107639f8151a",
+  "note": "Preserved existing result when version tracking was added. Historical agreement uses the separate holdout fit.",
+  "model_source_filename": "baseline_model.ipynb"
+}

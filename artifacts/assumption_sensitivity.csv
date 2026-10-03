@@ -1,0 +1,6 @@
+assumed_policy,decision_overlap,tpr_gap_under_assumption,changed_decisions
+academic_only,0.944,0.0804437765533107,224
+learned_work_credit,1.0,0.0,0
+add_mild_financial_need,0.9625,0.03343511669934274,150
+add_stronger_financial_need,0.9195,0.06587649638497095,322
+add_first_generation_support,0.965,0.010286028868488617,140
