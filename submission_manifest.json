@@ -18,7 +18,7 @@
     "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
   },
   "files": {
-    ".gitattributes": "c7569a16a2abbecefe474e0b3c24b5ec6e9e54f5e791dda5a397232e80e19866",
+    ".gitattributes": "e69d2b8e37b2c24e7f804bdcc221ede2fea8defcda9277925499f275e074e549",
     ".gitignore": "1eaf07b43ca2667dc8cf0d97335cb998b287a319625477ec417e33592c400824",
     "archive/v1_score_repair_9463/ARCHIVE_MANIFEST.json": "0bb92a449bad68965798be5c0708ec90ecd39b55f838695863939221e7d84959",
     "archive/v1_score_repair_9463/artifacts/academic_band_audit.csv": "08f5d478b080faba96ef4fc50fe1b2930f7e8c78a733350ac509b702c8c2574c",
