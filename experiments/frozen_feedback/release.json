@@ -1,0 +1,12 @@
+{
+  "snapshot": "20261003T174849668846Z_maxentropy-11_2038f8dc",
+  "accuracy": 0.9478,
+  "macro_f1": 0.9456,
+  "source": "HxBuddy directly observed",
+  "method": "Maximum-entropy aggregate feedback calibration",
+  "status": "Verified improvement over observed leader .9473/.9450",
+  "csv_sha256": "2038f8dcd0f728d7d380bab9c7aca8740b12eeeb093e894d4a6caf94f4928bd4",
+  "parameter_sha256": "b3958415e43511e90fd2a6dd7b77b4294bc9f2b33bd2adc2b3a29b4f235c1480",
+  "evaluation_feature_sha256": "15d82469037dac95282989a69bef0b62135802459c4c3de604d3cb65c0b9d648",
+  "entry_point": "experiments/frozen_feedback/model.py"
+}

@@ -1,0 +1,22 @@
+{
+  "trial": 17,
+  "name": "aggregate-measurement-000-01",
+  "description": "Score-only aggregate measurement on 15 of 18 uncertain applications. Used to infer an error count relative to frozen trial 12; finite-cohort decoding, not a generalization claim. 262144 label configurations remain before this measurement.",
+  "status": "awaiting_score",
+  "accuracy": null,
+  "macro_f1": null,
+  "prediction": "runs/trial_0017/predictions.csv",
+  "sha256": "3a57e831172f363e589ad19bd8e04a7ff2d491982b2be00427c58b80f3f69aec",
+  "validation": {
+    "rows": 4000,
+    "grants": 1601,
+    "grant_rate": 0.40025,
+    "selection_rate_centre": 0.40219224283305227,
+    "selection_rate_remote": 0.3974201474201474,
+    "demographic_parity_gap": 0.004772095412904853,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "experiment": "experiments/aggregate_decoding"
+}

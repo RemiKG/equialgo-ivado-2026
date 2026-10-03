@@ -1,0 +1,128 @@
+[
+  {
+    "pool": 256,
+    "seed": 17,
+    "queries": 20,
+    "original_pool_errors": 110,
+    "remaining_pool_errors": 89,
+    "net_corrected": 21,
+    "elapsed_seconds": 8.030999999988126,
+    "status": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+    "gap": 0.07569275621840374,
+    "constraint_residual": 0.0
+  },
+  {
+    "pool": 256,
+    "seed": 17,
+    "queries": 40,
+    "original_pool_errors": 110,
+    "remaining_pool_errors": null,
+    "net_corrected": null,
+    "elapsed_seconds": 8.01600000000326,
+    "status": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+  },
+  {
+    "pool": 256,
+    "seed": 17,
+    "queries": 60,
+    "original_pool_errors": 110,
+    "remaining_pool_errors": null,
+    "net_corrected": null,
+    "elapsed_seconds": 8.0,
+    "status": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+  },
+  {
+    "pool": 256,
+    "seed": 17,
+    "queries": 80,
+    "original_pool_errors": 110,
+    "remaining_pool_errors": null,
+    "net_corrected": null,
+    "elapsed_seconds": 8.01600000000326,
+    "status": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+  },
+  {
+    "pool": 256,
+    "seed": 51,
+    "queries": 20,
+    "original_pool_errors": 96,
+    "remaining_pool_errors": 93,
+    "net_corrected": 3,
+    "elapsed_seconds": 8.0,
+    "status": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+    "gap": 0.15539701604423398,
+    "constraint_residual": 0.0
+  },
+  {
+    "pool": 256,
+    "seed": 51,
+    "queries": 40,
+    "original_pool_errors": 96,
+    "remaining_pool_errors": null,
+    "net_corrected": null,
+    "elapsed_seconds": 8.014999999984866,
+    "status": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+  },
+  {
+    "pool": 256,
+    "seed": 51,
+    "queries": 60,
+    "original_pool_errors": 96,
+    "remaining_pool_errors": null,
+    "net_corrected": null,
+    "elapsed_seconds": 8.0,
+    "status": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+  },
+  {
+    "pool": 256,
+    "seed": 51,
+    "queries": 80,
+    "original_pool_errors": 96,
+    "remaining_pool_errors": null,
+    "net_corrected": null,
+    "elapsed_seconds": 8.01600000000326,
+    "status": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+  },
+  {
+    "pool": 256,
+    "seed": 104,
+    "queries": 20,
+    "original_pool_errors": 115,
+    "remaining_pool_errors": 96,
+    "net_corrected": 19,
+    "elapsed_seconds": 8.0,
+    "status": "Time limit reached. (HiGHS Status 13: Time limit reached)",
+    "gap": 0.017456538748107913,
+    "constraint_residual": 0.0
+  },
+  {
+    "pool": 256,
+    "seed": 104,
+    "queries": 40,
+    "original_pool_errors": 115,
+    "remaining_pool_errors": null,
+    "net_corrected": null,
+    "elapsed_seconds": 8.01600000000326,
+    "status": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+  },
+  {
+    "pool": 256,
+    "seed": 104,
+    "queries": 60,
+    "original_pool_errors": 115,
+    "remaining_pool_errors": null,
+    "net_corrected": null,
+    "elapsed_seconds": 8.0,
+    "status": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+  },
+  {
+    "pool": 256,
+    "seed": 104,
+    "queries": 80,
+    "original_pool_errors": 115,
+    "remaining_pool_errors": null,
+    "net_corrected": null,
+    "elapsed_seconds": 8.01500000001397,
+    "status": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+  }
+]

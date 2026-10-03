@@ -1,0 +1,22 @@
+{
+  "trial": 19,
+  "name": "graph-consistent-aggregate-merit",
+  "description": "Nearest-neighbour consistency with aggregate count constraints; independent graph hypothesis rather than a fixed linear merit architecture.",
+  "status": "awaiting_score",
+  "accuracy": null,
+  "macro_f1": null,
+  "prediction": "runs/trial_0019/predictions.csv",
+  "sha256": "b315756443b78cfdf934d2288b44da256002a5ecc27871645c5493345c5c0715",
+  "validation": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.40345699831365933,
+    "selection_rate_remote": 0.39496314496314494,
+    "demographic_parity_gap": 0.008493853350514391,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "experiment": "experiments/graph_merit"
+}

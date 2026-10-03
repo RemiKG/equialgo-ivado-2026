@@ -1,61 +1,38 @@
-# EquiAlgo - SOTA Overfitters
+# EquiAlgo experiments
 
-**Current measured champion: 94.78% accuracy / 94.56% macro F1 on HxBuddy.** Root `predictions.csv` is the exact scored file: 4,000 rows and 1,600 grants. It was published to the leaderboard. V1 measured 94.63% / 94.40%; the gain is 0.15 / 0.16 percentage points. This narrowly exceeds the last observed competing leader at 94.73% / 94.50%. It does not establish 98% accuracy.
+Target: **97% measured accuracy**. Best verified so far: **94.78% accuracy / 94.56% macro F1**.
 
-See [every scored attempt](RESULTS.md), [the complete prediction history](predictions_history/README.md), and [the score progression](artifacts/score_progress.png). First three results were reported by the participant; the following eleven were directly observed. Unscored candidates are never attributed a measured result.
+Open **TRIALS.txt** for trial number, name, description and actual result. Scores are evaluation-only: leaderboard publication is disabled. Desktop control is also disabled.
 
-## Method and evidence
+## Layout
 
-The champion uses maximum-entropy calibration of an academic/work prior against eleven measured aggregate submission scores. Joint constraints from overlapping decisions adjust uncertain cases near the cutoff. Frozen parameters reproduce the champion without using later feedback. Exactly 1,600 applicants receive grants.
+- `experiments/`: independent approaches, each free to choose its own model, features, training code and dependencies. No shared model superclass or prescribed ML architecture.
+- `src/equialgo/`: input/output contracts, trial records and release utilities only.
+- `runs/`: immutable predictions, append-only measured results, and trial outputs.
+- `docs/`: research, reasoning, governance and event handoff.
+- `config/`: active release pointer, evaluation policy and environment requirements.
+- `data/`: unchanged organizer inputs; excluded from Git.
+- `archive/`: frozen former approaches and the pre-reorganization code.
+- `delivery/`: local bundles and candidate exports; excluded from Git.
+- `.local/`: private environment, browser-session helper, scratch work and logs; excluded from Git.
 
-This is an evaluation-cohort experiment. The same cohort informed model development, so portal gains are not independent generalization estimates. The method inherits dependencies from diagnostic submissions, including income and geography. Independent merit labels, legitimate policy criteria and fresh validation are required before any real use. The executable rejects changed cohorts and modified features. The actual independent-reference equal-opportunity gap is unavailable; the Pareto plot is explicitly a sensitivity analysis under model assumptions.
+The four root challenge deliverables remain `predictions.csv`, `model_corrige.py`, `audit_rapport.ipynb`, and `presentation.pdf`. They are the measured fallback until a better trial is verified. `model_corrige.py` dispatches to the experiment identified in `config/active_release.json`; it does not prescribe future models.
 
-The current allocation changes 32 decisions from V1. Centre selection is 957/2,372 (40.35%); remote selection is 643/1,628 (39.50%). The observed demographic-parity gap is 0.849 percentage points. These selection rates do not establish equal opportunity.
+## Experiment contract
 
-## Preserved alternatives
+Any method is allowed to emit a two-column CSV containing the 4,000 evaluation IDs and binary `decision_octroi`, within the 36-44% allocation budget. Method-specific probabilities, features and training processes remain inside that experiment. Do not add a shared abstraction until different methods actually need it.
 
-- [V1 archive](archive/v1_score_repair_9463/): original code, notebook, predictions, plots, presentation, tests and package. Measured 94.63% / 94.40%.
-- [V2 archive](archive/v2_inverse_merit_9223/): rejected structured-merit method. Measured 92.23% / 91.90%.
-- [Prediction snapshots](predictions_history/): immutable CSVs, source code, parameters and checksums for every generated version. Scored results are append-only in `official_results.jsonl`.
-- `submissions/offline_candidates/robust_calibration.csv`: unscored sensitivity candidate, 14 decisions different from the champion. The champion remains unchanged.
+Every serious trial records a hypothesis, evidence, expected failure mode and result. Failed trials remain visible. Measured portal accuracy, historical-label agreement and simulated metrics are separate fields. New candidates cannot replace the active release based on simulations.
 
-## Deliverables
-
-| File | Purpose |
-|---|---|
-| [predictions.csv](predictions.csv) | Exact measured champion |
-| [model_corrige.py](model_corrige.py) | Frozen, hash-checked reproduction |
-| [audit_rapport.ipynb](audit_rapport.ipynb) | Executed diagnostic, measured results and limitations |
-| [presentation.pdf](presentation.pdf) | Seven-slide, five-minute pitch |
-| [artifacts/pareto_front.png](artifacts/pareto_front.png) | Ten-setting opportunity sensitivity sweep |
-| [RESULTS.md](RESULTS.md) | All 14 measured attempts with links |
-| [MONITORING.md](MONITORING.md) | Independent review, appeals and release controls |
-
-The local bundle `submissions/equialgo_submission.zip` includes the participant package for the authorized judges' handoff. Raw participant data and bundles are excluded from the public repository. Other experimental artifacts retain their method-specific names and are not the active release; `artifacts/active_prediction.json` identifies the champion.
-
-## Reproduce
-
-Place the original participant package at `data/equialgo-participants/`, with its CSV files under `data/`. Python 3.10 or newer:
+## Commands
 
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r config/requirements.txt
+python -m pip install -e .
 python model_corrige.py
-python -m unittest discover -s tests -v
-python build_audit.py
-python build_presentation.py
-python package_submission.py
+python -m equialgo.trials refresh
+python -m equialgo.trials register --name NAME --description DESCRIPTION --prediction FILE
+python -m equialgo.trials score NUMBER --accuracy FRACTION --macro-f1 FRACTION --source SOURCE
 ```
 
-The active CSV SHA-256 is `2038f8dcd0f728d7d380bab9c7aca8740b12eeeb093e894d4a6caf94f4928bd4`. Model reproduction must match before replacing an output. Tests cover release integrity, changed-cohort rejection, budget optimization, row-order consistency and history preservation.
-
-To record a real portal result for an exact snapshot:
-
-```text
-python prediction_history.py score SNAPSHOT_ID --accuracy VALUE --macro-f1 VALUE --source HxBuddy
-```
-
-Use fractions, not percentages. Preserve failed experiments. Do not replace portal scores with model-implied values. New experiments never promote themselves to champion without measurement.
-
-## Attribution
-
-Data and challenge: supplied IVADO briefs, starter notebook and [HxBuddy](https://hxbuddy.ca/). Methods: SciPy, scikit-learn and [Fairlearn definitions](https://fairlearn.org/main/user_guide/assessment/common_fairness_metrics.html). Python, pandas, NumPy, Matplotlib, Jupyter and ReportLab produce the artifacts. OpenAI Codex assisted analysis, implementation and writing. No external training dataset, pretrained predictor or candidate ID as a predictive feature was used.
+The active champion uses evaluation-cohort feedback and is not independently validated on new applicants. Its exact file hash and frozen entry point are in `config/active_release.json`. Previous models and all 14 measured scores have been preserved. OpenAI Codex assistance is disclosed; only the supplied synthetic dataset is used for training.

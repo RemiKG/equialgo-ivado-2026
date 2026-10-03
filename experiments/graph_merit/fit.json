@@ -1,0 +1,55 @@
+{
+  "iterations": [
+    {
+      "iteration": 0,
+      "max_change": 0.4494801396108472
+    },
+    {
+      "iteration": 1,
+      "max_change": 0.24576056725799372
+    },
+    {
+      "iteration": 2,
+      "max_change": 0.14894876698497117
+    },
+    {
+      "iteration": 3,
+      "max_change": 0.08405654816970132
+    },
+    {
+      "iteration": 4,
+      "max_change": 0.045799198307090394
+    },
+    {
+      "iteration": 5,
+      "max_change": 0.024418159157351293
+    },
+    {
+      "iteration": 6,
+      "max_change": 0.012843306910254648
+    },
+    {
+      "iteration": 7,
+      "max_change": 0.00668247174577255
+    },
+    {
+      "iteration": 8,
+      "max_change": 0.003452581105555852
+    },
+    {
+      "iteration": 9,
+      "max_change": 0.001772417126188336
+    },
+    {
+      "iteration": 10,
+      "max_change": 0.0009060344543130594
+    },
+    {
+      "iteration": 11,
+      "max_change": 0.0004614024381520143
+    }
+  ],
+  "constraint_residual_count": 0.004937764438425079,
+  "changed_from_champion": 22,
+  "warning": "Geometry is a hypothesis; aggregate fit is not independent validation."
+}

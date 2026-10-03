@@ -1,0 +1,22 @@
+{
+  "trial": 16,
+  "name": "latent-merit-observation-channel",
+  "description": "Nonlinear probit merit head estimated from aggregate reference feedback; separate historical committee observation model provides only a structural prior.",
+  "status": "awaiting_score",
+  "accuracy": null,
+  "macro_f1": null,
+  "prediction": "runs/trial_0016/predictions.csv",
+  "sha256": "7740269f3509b2c3f17fba04b5de515d12cb2c41248c6fd0884dbc43aca882dc",
+  "validation": {
+    "rows": 4000,
+    "grants": 1600,
+    "grant_rate": 0.4,
+    "selection_rate_centre": 0.40893760539629004,
+    "selection_rate_remote": 0.386977886977887,
+    "demographic_parity_gap": 0.02195971841840305,
+    "reference_accuracy": null,
+    "reference_equal_opportunity_gap": null,
+    "status": "Format, IDs and budget valid; hidden-reference metrics unavailable."
+  },
+  "experiment": "experiments/latent_merit"
+}

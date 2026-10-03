@@ -1,0 +1,12 @@
+{
+  "updated_utc": "2026-10-03T18:50:58.573103+00:00",
+  "pid": 15928,
+  "status": "waiting_for_submission_quota",
+  "target_accuracy": 0.97,
+  "published": false,
+  "desktop_control": false,
+  "decoded_candidates": 0,
+  "corrected_errors": 0,
+  "next_submission_utc": "2026-10-03T19:36:05.137000+00:00",
+  "pending_trial": 18
+}

@@ -1,0 +1,9 @@
+{
+  "target_accuracy": 0.97,
+  "active_experiment": "aggregate_decoding",
+  "independent_candidate_queue": [
+    19
+  ],
+  "priority": "Do not interrupt the active block or bypass server cooldown. Score graph candidate after the next block is resolved.",
+  "leaderboard_publication": false
+}

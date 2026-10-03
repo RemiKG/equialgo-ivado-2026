@@ -1,0 +1,10 @@
+{
+  "block_size": 18,
+  "simulation_runs": 20,
+  "mean_queries": 8.0,
+  "min_queries": 4,
+  "max_queries": 10,
+  "projected_queries_for_216_labels": 96.0,
+  "elapsed_seconds": 7.5310000000172295,
+  "caveat": "Synthetic random labels only; no claim about actual evaluation accuracy."
+}

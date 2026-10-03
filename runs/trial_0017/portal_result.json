@@ -1,0 +1,15 @@
+{
+  "submission_id": "8e207447-26dc-4e37-8e58-509ec790482a",
+  "is_final": false,
+  "performance": {
+    "accuracy": 0.947,
+    "f1_score_macro": 0.94478,
+    "fairness": null,
+    "robustness": null,
+    "mae": null,
+    "rmse": null,
+    "score": 0.94478,
+    "__typename": "Performance"
+  },
+  "sha256": "3a57e831172f363e589ad19bd8e04a7ff2d491982b2be00427c58b80f3f69aec"
+}

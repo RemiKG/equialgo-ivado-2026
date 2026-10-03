@@ -1,0 +1,9 @@
+{
+  "target_accuracy": 0.97,
+  "publish_to_leaderboard": false,
+  "desktop_control_allowed": false,
+  "submissions_per_hour_limit": 20,
+  "local_submission_cap": 19,
+  "promotion_requires_measured_result": true,
+  "notes": "Score-only evaluations. Never press YES or call a leaderboard publication endpoint."
+}
