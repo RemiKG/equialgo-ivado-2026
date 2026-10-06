@@ -20,6 +20,9 @@ The four root challenge deliverables remain `predictions.csv`, `model_corrige.py
 
 ## Experiment contract
 
+Optional [applicant clustering](experiments/clustering/README.md) provides eight
+methods for cohort exploration, with labels and diagnostics exported separately.
+
 Any method is allowed to emit a two-column CSV containing the 4,000 evaluation IDs and binary `decision_octroi`, within the 36-44% allocation budget. Method-specific probabilities, features and training processes remain inside that experiment. Do not add a shared abstraction until different methods actually need it.
 
 Every serious trial records a hypothesis, evidence, expected failure mode and result. Failed trials remain visible. Measured portal accuracy, historical-label agreement and simulated metrics are separate fields. New candidates cannot replace the active release based on simulations.
